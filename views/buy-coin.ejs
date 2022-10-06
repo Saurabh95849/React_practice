@@ -390,6 +390,10 @@ font-size: 14px;
             var ethbiddings = document.getElementById('ethbidding');
             ethbiddings.value = (bidding.value)*0.0002111
         }
+        function myChangeFunction(bidding) {
+            var ethbiddings = document.getElementById('ethbidding');
+            ethbiddings.value = (bidding.value)*0.0002111
+        }
     </script>
     <script>
         function decimalToHexString(number) {
@@ -398,6 +402,7 @@ font-size: 14px;
             }
             return number.toString(16).toUpperCase();
         }
+        
 
         const ethereumButton = document.querySelector('.enableEthereumButton');
         const sendEthButton = document.querySelector('.sendEthButton');
@@ -431,7 +436,8 @@ font-size: 14px;
                 .then((txHash) => console.log(txHash))
                 .catch((error) => console.error);
         });
-
+         
+        
 
     </script>
 
